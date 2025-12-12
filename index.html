@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="az">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Sevinc & Fərid-in toy dəvətnaməsi. 28 dekabr 2025, Gold Palace. RSVP və Google Maps linki burada.">
+    <meta property="og:title" content="Sevinc ♥ Fərid - Toy dəvətnaməsi">
+    <meta property="og:description"
+        content="Sevinc & Fərid-in toy dəvətnaməsi. 28 dekabr 2025, Gold Palace. RSVP və Google Maps linki burada.">
+    <meta property="og:image" content="assets/images/cover.png">
+    <meta name="twitter:image" content="assets/images/cover.png">
+
+    <meta property="og:type" content="website">
+
+    <title>Sevinc ♥ Fərid - Toy dəvətnaməsi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="card fade">
+        <section class="left">
+            <div class="title fade delay1">Siz dəvətlisiniz</div>
+            <h1 class="couple fade delay2">Sevinc & Fərid</h1>
+            <p class="message fade delay3">
+                Hörmətli dostlar, günümüzə şahidlik etməyinizdən məmnun olarıq.
+                28 dekabr tarixində birgə sevincimizi paylaşmağa sizi dəvət edirik.
+            </p>
+
+            <div class="details fade delay4">
+                <div class="detail">
+                    <h4>Tarix & Saat</h4>
+                    <p>28 dekabr — 18:00</p>
+                </div>
+                <div class="detail">
+                    <h4>Məkan</h4>
+                    <p id="venue-display">Gold Palace</p>
+                </div>
+            </div>
+
+            <div class="cta fade delay4">
+                <a class="btn" id="rsvp-btn">RSVP</a>
+                <a class="btn ghost" id="add-calendar">Təqvimə əlavə et</a>
+            </div>
+
+            <button id="music-toggle">🔊 Səsi aç</button>
+        </section>
+
+        <aside class="right fade delay4">
+            <div style="text-align:center">
+                <div style="font-size:13px;color:var(--muted);text-transform:uppercase;">Toyun Məkanı</div>
+                <div class="venue" id="venue-name">Gold Palace</div>
+                <a id="map-link" class="map-link" target="_blank" href="https://maps.app.goo.gl/Dq2TAaNeoLw8twX39">
+                    Google Maps-də göstər
+                </a>
+            </div>
+            <div id="qr"></div>
+        </aside>
+    </div>
+
+    <div id="music-name">Musiqi: Yiruma - River Flows in You</div>
+
+    <!-- Libraries -->
+    <script src="libs/qrcode.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/qr.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Audio -->
+    <audio id="bg-music" src="assets/music/River Flows in You.mp3" loop muted></audio>
+    <noscript>
+        <a href="https://maps.app.goo.gl/Dq2TAaNeoLw8twX39">Google Maps linki</a>
+    </noscript>
+
+
+</body>
+
+</html>
